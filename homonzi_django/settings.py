@@ -27,6 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
+CSRF_TRUSTED_ORIGINS = ['https://tpfoster23-laughing-space-memory-979qw4wjv5r7h7pjq-8000.preview.app.github.dev']
+
 
 # Application definition
 
@@ -37,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'homonzi'
+    'homonzi.apps.HomonziConfig'
 ]
 
 MIDDLEWARE = [

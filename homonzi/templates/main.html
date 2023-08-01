@@ -1,4 +1,13 @@
+{% load static %}
+
+
 <h1>hello</h1>
 
-enter your prompt below
-<input name="prompt">
+<form method="post" action="runPrompt">
+    enter your prompt below
+    <input name="prompt">
+    <input type="submit" value="send" name="send">
+
+</form>
+
+{{message}}
